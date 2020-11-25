@@ -41,3 +41,4 @@ C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\UI
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.exe
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.pdb
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.UI_Profesores.resources
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Informes.resources

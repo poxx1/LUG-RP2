@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Clase.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Informe1.cs" />
+    <Compile Include="Informe2.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Profesor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -43,8 +43,8 @@
   <ItemGroup>
     <Compile Include="BLL_Clase.cs" />
     <Compile Include="BLL_Clientes.cs" />
+    <Compile Include="BLL_informes.cs" />
     <Compile Include="BLL_Profes.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XML.cs" />
   </ItemGroup>

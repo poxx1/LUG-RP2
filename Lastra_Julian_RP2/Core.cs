@@ -48,5 +48,12 @@ namespace Lastra_Julian_RP2
             u.MdiParent = this;
             u.Show();
         }
+
+        private void informesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var u = new Informes();
+            u.MdiParent = this;
+            u.Show();
+        }
     }
 }
