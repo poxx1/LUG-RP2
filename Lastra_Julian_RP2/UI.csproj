@@ -90,6 +90,9 @@
     <EmbeddedResource Include="UI_Clientes.resx">
       <DependentUpon>UI_Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI_Profesores.resx">
+      <DependentUpon>UI_Profesores.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

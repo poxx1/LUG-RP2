@@ -41,5 +41,12 @@ namespace Lastra_Julian_RP2
             u.MdiParent = this;
             u.Show();
         }
+
+        private void profesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UI_Profesores u = new UI_Profesores();
+            u.MdiParent = this;
+            u.Show();
+        }
     }
 }
