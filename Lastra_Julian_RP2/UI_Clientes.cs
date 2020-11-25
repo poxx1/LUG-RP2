@@ -17,7 +17,7 @@ namespace Lastra_Julian_RP2
         public UI_Clientes()
         {
             InitializeComponent();
-            Load();
+            Loade();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -48,11 +48,32 @@ namespace Lastra_Julian_RP2
             cliente.Costo = Int32.Parse(textBox7.Text);
         }
 
-        public void Load()
+        public void Loade()
         {
             exec = new BLL_Clientes();
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = exec.Listar(); 
+        }
+
+        private void UI_Clientes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Update
+            Assing();
+            exec = new BLL_Clientes();
+            exec.Update(cliente);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Delte
+            Assing();
+            exec = new BLL_Clientes();
+            exec.Delete(cliente);
         }
     }
 }

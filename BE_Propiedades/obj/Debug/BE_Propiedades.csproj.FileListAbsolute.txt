@@ -4,3 +4,8 @@ C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propied
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.csproj.CoreCompileInputs.cache
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.dll
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BE_Propiedades\bin\Debug\BE_Propiedades.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BE_Propiedades\bin\Debug\BE_Propiedades.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.csproj.CoreCompileInputs.cache
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BE_Propiedades\obj\Debug\BE_Propiedades.pdb

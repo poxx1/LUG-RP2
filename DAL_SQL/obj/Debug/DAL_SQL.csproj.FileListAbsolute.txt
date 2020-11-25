@@ -4,3 +4,9 @@ C:\Users\Poxi\source\repos\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.csprojAss
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.csproj.CoreCompileInputs.cache
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.dll
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\bin\Debug\DAL_SQL.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\bin\Debug\DAL_SQL.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.csprojAssemblyReference.cache
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.csproj.CoreCompileInputs.cache
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\DAL_SQL\obj\Debug\DAL_SQL.pdb

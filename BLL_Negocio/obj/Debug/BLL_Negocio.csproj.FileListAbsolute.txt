@@ -11,3 +11,16 @@ C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\Mapper.dll
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\Mapper.pdb
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\DAL_SQL.dll
 C:\Users\Poxi\source\repos\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\DAL_SQL.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\BLL_Negocio.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\BLL_Negocio.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\BE_Propiedades.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\Mapper.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\DAL_SQL.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\BE_Propiedades.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\Mapper.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\bin\Debug\DAL_SQL.pdb
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\obj\Debug\BLL_Negocio.csprojAssemblyReference.cache
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\obj\Debug\BLL_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\obj\Debug\BLL_Negocio.csproj.CopyComplete
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\obj\Debug\BLL_Negocio.dll
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\BLL_Negocio\obj\Debug\BLL_Negocio.pdb

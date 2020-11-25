@@ -68,6 +68,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -77,6 +78,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -234,6 +236,7 @@
             this.Controls.Add(this.button1);
             this.Name = "UI_Clientes";
             this.Text = "UI_Clientes";
+            this.Load += new System.EventHandler(this.UI_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
