@@ -1,0 +1,9 @@
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\bin\Debug\Lastra_Julian_RP2.exe.config
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\bin\Debug\Lastra_Julian_RP2.exe
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\bin\Debug\Lastra_Julian_RP2.pdb
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.csprojAssemblyReference.cache
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Properties.Resources.resources
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.csproj.GenerateResource.cache
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.csproj.CoreCompileInputs.cache
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.exe
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.pdb

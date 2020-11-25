@@ -1,0 +1,11 @@
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\Mapper.dll
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\Mapper.pdb
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\obj\Debug\Mapper.csprojAssemblyReference.cache
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\obj\Debug\Mapper.dll
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\obj\Debug\Mapper.pdb
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\BE_Propiedades.dll
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\BE_Propiedades.pdb
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\obj\Debug\Mapper.csproj.CopyComplete
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\DAL_SQL.dll
+C:\Users\Poxi\source\repos\Lastra_Julian_RP2\Mapper\bin\Debug\DAL_SQL.pdb
