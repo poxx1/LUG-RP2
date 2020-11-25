@@ -13,67 +13,65 @@ namespace BLL_Negocio
     {
         public string documents = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
-        public List<Cliente> Read()
+        public List<Clase> Read()
         {
-            string path = documents + @"\UAI\LUG\LUG-P2\Documents\file.xml";
+            string path = documents + @"\UAI\LUG-P2\Documents\file.xml";
 
-            var query = from Servicios in XElement.Load(path).Elements("Servicios")
-                        select new Cliente //Aca reemplazo por la clase BE_Clients o lo que sea
+            var query = from Clase in XElement.Load(path).Elements("Clases")
+                        select new Clase
                         {
-                            //Aca van las propiedades de BE_Programas
+                            Descripcion = Convert.ToString(Clase.Attribute("Actividad").Value).Trim(),
 
-                            //Tipo = Convert.ToString(Servicios.Attribute("Tipo").Value).Trim(),
+                            profe = Int32.Parse((Clase.Attribute("Calidad").Value).Trim()),
 
-                            //Calidad = Convert.ToString(Servicios.Attribute("Calidad").Value).Trim(),
+                            Dia = Convert.ToString(Clase.Attribute("Nombre").Value).Trim(),
 
-                            //Nombre = Convert.ToString(Servicios.Attribute("Nombre").Value).Trim(),
-
-                            //Minutos = Int32.Parse(Convert.ToString(Servicios.Attribute("Minutos").Value).Trim()),
-
-                            //Fecha = Convert.ToDateTime(Convert.ToString(Servicios.Attribute("Fecha").Value).Trim())
-
+                            Turno = Convert.ToString(Clase.Attribute("Minutos").Value).Trim()
                         };
 
-            List<Cliente> Lista = query.ToList<Cliente>();
+            List<Clase> Lista = query.ToList<Clase>();
             return Lista;
 
         }
 
-        public void Write(string Servicio, string Calidad, string Nombre, string Minutos, string Fecha)
+        public void Write(string Clase, string Profesor, string Dia, string Turno)
         {
-            string path = documents + @"\UAI\LUG\LUG-P2\Documents\file.xml";
+            string path = documents + @"\UAI\LUG-P2\Documents\file.xml";
             XDocument doc = XDocument.Load(path);
 
-            doc.Element("Servicios").Add(new XElement("Servicios",
-                new XAttribute("Tipo", Servicio),
-                new XElement("Calidad", Calidad),
-                new XElement("Nombre", Nombre),
-                new XElement("Minutos", Minutos),
-                new XElement("Fecha", Fecha)
+            doc.Element("Clases").Add(new XElement("Clase",
+                new XAttribute("Actividad", Clase),
+                new XElement("Profesor", Profesor),
+                new XElement("Dia", Dia),
+                new XElement("Turno", Turno)
                 ));
 
             doc.Save(path);
         }
 
-        public void Create(string Servicio, string Calidad, string Nombre, string Minutos, string Fecha)
+        public void Create(string Clase, string Profesor, string Dia, string Turno)
         {
-            string path = documents + @"\UAI\LUG\LUG-P2\Documents\file.xml";
+            string path = documents + @"\UAI\LUG-P2\Documents\file.xml";
 
             var file = new XmlTextWriter(path, System.Text.Encoding.UTF8);
             file.Formatting = Formatting.Indented;
 
             file.Indentation = 2;
-            file.WriteStartDocument(true);
+            file.WriteStartDocument();
 
-            file.WriteStartElement("Servicios");
-            file.WriteElementString("Streaming", Calidad);
-            file.WriteAttributeString("Tipo", Servicio);
-            file.WriteElementString("Calidad", Calidad);
-            file.WriteElementString("Nombre", Nombre);
-            file.WriteElementString("Minutos", Minutos);
-            file.WriteElementString("Fecha", Fecha);
+            file.WriteStartElement("Clases");
 
+            file.WriteElementString("Clase", "Clase");
+            file.WriteAttributeString("Actividad", Clase);
+            //El token StartAttribute en el estado Content daría lugar a un documento XML no válido.
+
+            file.WriteElementString("Profesor", Profesor);
+            file.WriteElementString("Dia", Dia);
+            file.WriteElementString("Turno", Turno);
+            
             file.WriteEndElement();
+            file.WriteEndDocument();
+
             file.Close();
         }
     }

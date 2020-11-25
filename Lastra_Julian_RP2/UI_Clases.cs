@@ -51,6 +51,8 @@ namespace Lastra_Julian_RP2
             Assing();
             bc = new BLL_Clase();
             bc.Insert(clase);
+
+            //Inserto en el XML Tambien.
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -72,6 +74,15 @@ namespace Lastra_Julian_RP2
         private void button4_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        public XML x = new XML();
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+           // x.Write();
+            x.Create("Boxeo","Juan","Lunes","4PM");
+            x.Read();
         }
     }
 }
