@@ -17,16 +17,16 @@ namespace BLL_Negocio
         {
             string path = documents + @"\UAI\LUG-P2\Documents\file.xml";
 
-            var query = from Clase in XElement.Load(path).Elements("Clases")
+            var query = from Clases in XElement.Load(path).Elements("Clase")
                         select new Clase
                         {
-                            Descripcion = Convert.ToString(Clase.Attribute("Actividad").Value).Trim(),
+                            Descripcion = Convert.ToString(Clases.Attribute("Actividad").Value).Trim(),
 
-                            profe = Int32.Parse((Clase.Attribute("Calidad").Value).Trim()),
+                            profe = Int32.Parse((Clases.Element("Profesor").Value).Trim()),
 
-                            Dia = Convert.ToString(Clase.Attribute("Nombre").Value).Trim(),
+                            Dia = Convert.ToString(Clases.Element("Dia").Value).Trim(),
 
-                            Turno = Convert.ToString(Clase.Attribute("Minutos").Value).Trim()
+                            Turno = Convert.ToString(Clases.Element("Turno").Value).Trim()
                         };
 
             List<Clase> Lista = query.ToList<Clase>();
@@ -56,8 +56,8 @@ namespace BLL_Negocio
             var file = new XmlTextWriter(path, System.Text.Encoding.UTF8);
             file.Formatting = Formatting.Indented;
 
-            file.Indentation = 2;
-            file.WriteStartDocument();
+            file.Indentation = 1;
+            file.WriteStartDocument(true);
 
             file.WriteStartElement("Clases");
 
