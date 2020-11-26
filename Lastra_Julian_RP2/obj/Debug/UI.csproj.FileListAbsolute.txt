@@ -32,13 +32,13 @@ C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\bin\Debug\Ma
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\bin\Debug\DAL_SQL.pdb
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\UI.csprojAssemblyReference.cache
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Core.resources
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Informes.resources
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Properties.Resources.resources
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.UI_Clases.resources
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.UI_Clientes.resources
+C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.UI_Profesores.resources
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\UI.csproj.GenerateResource.cache
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\UI.csproj.CopyComplete
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.exe
 C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.pdb
-C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.UI_Profesores.resources
-C:\Users\Poxi\Documents\UAI\LUG\Lastra_Julian_RP2\Lastra_Julian_RP2\obj\Debug\Lastra_Julian_RP2.Informes.resources

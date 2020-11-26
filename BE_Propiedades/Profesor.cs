@@ -8,6 +8,9 @@ namespace BE_Propiedades
 {
     public class Profesor:Persona
     {
-       
+        public override string ToString()
+        {
+            return Nombre + " " + Apellido;
+        }
     }
 }

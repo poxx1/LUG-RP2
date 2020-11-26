@@ -28,7 +28,7 @@ namespace Mapper
                     Profesor p = new Profesor();
 
                     c.Descripcion = Item["Descripcion"].ToString();
-                    c.profe = Int32.Parse(Item["Profesor"].ToString());
+                    //c.profe = Int32.Parse(Item["Profesor"].ToString());
                     c.Dia = Item["Dia"].ToString();
                     c.Turno = (Item["Turno"].ToString());
                     c.Cantidad = Convert.ToInt32(Item["Cantidad"]);
@@ -62,7 +62,7 @@ namespace Mapper
 
             SqlParameter Param2 = new SqlParameter();
             Param2.ParameterName = "@Profesor";
-            Param2.Value = c.profe;
+            Param2.Value = c.Profesor.DNI;
             Param2.SqlDbType = SqlDbType.VarChar;
             AL.Add(Param2);
 

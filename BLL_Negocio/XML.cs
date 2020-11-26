@@ -22,7 +22,7 @@ namespace BLL_Negocio
                         {
                             Descripcion = Convert.ToString(Clases.Attribute("Actividad").Value).Trim(),
 
-                            profe = Int32.Parse((Clases.Element("Profesor").Value).Trim()),
+                            //= Int32.Parse((Clases.Element("Profesor").Value).Trim()),
 
                             Dia = Convert.ToString(Clases.Element("Dia").Value).Trim(),
 

@@ -54,6 +54,7 @@ namespace Lastra_Julian_RP2
             Assing();
             ex = new BLL_Profes();
             ex.Insert(p);
+            Loade();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -62,6 +63,7 @@ namespace Lastra_Julian_RP2
             Assing();
             ex = new BLL_Profes();
             ex.Update(p);
+            Loade();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -70,6 +72,7 @@ namespace Lastra_Julian_RP2
             Assing();
             ex = new BLL_Profes();
             ex.Delete(p);
+            Loade();
         }
     }
 }

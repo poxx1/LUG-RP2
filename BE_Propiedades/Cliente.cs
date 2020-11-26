@@ -12,7 +12,9 @@ namespace BE_Propiedades
         public string Correo { get; set; }
         public Clase Clase { get; set; }
 
-        public int Clases { get; set; }
+        //public int Clases { get; set; }
         public int Costo { get; set; }
+
+     
     }
 }

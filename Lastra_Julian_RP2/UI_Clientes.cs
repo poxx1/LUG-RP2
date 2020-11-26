@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -45,20 +46,36 @@ namespace Lastra_Julian_RP2
         {
             cliente = new Cliente();
 
-            cliente.DNI = Int32.Parse(textBox1.Text);
-            cliente.Nombre = textBox2.Text;
-            cliente.Apellido = textBox3.Text;
-            cliente.FechaNac = Convert.ToDateTime(textBox4.Text); 
-            cliente.Correo = textBox5.Text;
-            cliente.Clases = 1;//Int32.Parse(textBox6.Text);
-            cliente.Costo = Int32.Parse(textBox7.Text);
+            try
+            {
+                cliente.DNI = Int32.Parse(textBox1.Text);
+                cliente.Nombre = textBox2.Text;
+                cliente.Apellido = textBox3.Text;
+                var formato = "dd/mm/yyyy";
+                cliente.FechaNac = Convert.ToDateTime(textBox4.Text);
+                cliente.Correo = textBox5.Text;
+                var f = new Clase();
+                f = (Clase)comboBox1.SelectedItem;
+                cliente.Clase = f;
+                cliente.Costo = Int32.Parse(textBox7.Text);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         public void Loade()
         {
             exec = new BLL_Clientes();
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = exec.Listar(); 
+            dataGridView1.DataSource = exec.Listar();
+            
+            var exec2 = new BLL_Clase();
+            var a = exec2.Listar();
+
+            comboBox1.DataSource = a;
+            comboBox1.DisplayMember = "Descripcion";
         }
 
         private void UI_Clientes_Load(object sender, EventArgs e)
@@ -96,7 +113,7 @@ namespace Lastra_Julian_RP2
         public bool Validate()
         {
             bool d1;
-            bool ok = false;
+            bool ok = true;
 
             //1.Nombre
             if (textBox2.Text.Length > 0)
@@ -106,8 +123,8 @@ namespace Lastra_Julian_RP2
                     ok = true;
 
                 else
-                  ok = false;
-                
+                    return false;
+
             }
 
             //2.Apellido
@@ -118,7 +135,7 @@ namespace Lastra_Julian_RP2
                     ok = true;
 
                 else
-                    ok = false;
+                    return false;
 
             }
 
@@ -128,7 +145,7 @@ namespace Lastra_Julian_RP2
                 ok = true;
 
             else
-           ok = false;
+                return false;
 
             //4.Clase 
             if (textBox4.Text.Length > 0)
@@ -138,7 +155,7 @@ namespace Lastra_Julian_RP2
                     ok = true;
 
                 else
-                    ok = false;
+                    return false;
 
             }
 
@@ -156,13 +173,18 @@ namespace Lastra_Julian_RP2
                 ok = true;
 
             else
-                ok = false;
+                return false;
 
             //7.Correo
 
 
             //Return
             return ok;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

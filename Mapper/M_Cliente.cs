@@ -25,14 +25,16 @@ namespace Mapper
                 foreach (DataRow Item in dt.Rows)
                 {
                     Cliente c = new Cliente();
+                    Clase cl = new Clase();
                     c.DNI = Convert.ToInt32(Item["DNI"]);
                     c.Nombre = Item["Nombre"].ToString();
                     c.Apellido = Item["Apellido"].ToString();
                     c.Costo = Convert.ToInt32(Item["Costo"]);
-                    //ClsEELocalidad oLoc = new ClsEELocalidad();
-                    c.Clases = Convert.ToInt32(Item["Clase"]);
+                    //c.Clases = Convert.ToInt32(Item["Clases"]);
                     c.Correo = Item["Correo"].ToString();
                     c.FechaNac = Convert.ToDateTime(Item["FechaNac"]);
+                    cl.Descripcion = Item["Descripcion"].ToString();
+                    c.Clase = cl;
 
                     lista.Add(c);
                 }
@@ -72,19 +74,19 @@ namespace Mapper
                 SqlParameter Param4 = new SqlParameter();
                 Param4.ParameterName = "@FechaNac";
                 Param4.Value = c.FechaNac;
-                Param4.SqlDbType = SqlDbType.Int;
+               Param4.SqlDbType = SqlDbType.NVarChar;
                 AL.Add(Param4);
 
             SqlParameter Param5 = new SqlParameter();
             Param5.ParameterName = "@Correo";
             Param5.Value = c.Correo;
-            Param5.SqlDbType = SqlDbType.Int;
+            Param5.SqlDbType = SqlDbType.NVarChar;
             AL.Add(Param5);
 
             SqlParameter Param6 = new SqlParameter();
             Param6.ParameterName = "@Clases";
-            Param6.Value = c.Clases;
-            Param6.SqlDbType = SqlDbType.Int;
+            Param6.Value = c.Clase.Descripcion;
+            Param6.SqlDbType = SqlDbType.NVarChar;
             AL.Add(Param6);
 
             SqlParameter Param7 = new SqlParameter();

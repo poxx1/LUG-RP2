@@ -33,26 +33,28 @@ namespace Lastra_Julian_RP2
         public void Assing()
         {
             clase = new Clase();
+            var pr = new Profesor();
 
             clase.Descripcion = textBox1.Text;
             //clase.Profesor.DNI = Int32.Parse(textBox2.Text);
             clase.Turno = textBox3.Text;
             clase.Dia = textBox4.Text;
             clase.Cantidad = Int32.Parse(textBox5.Text);
-            //clase.Profesor.DNI = Int32.Parse(comboBox1.SelectedItem.ToString());
+            pr = (Profesor)comboBox1.SelectedItem;
+            clase.Profesor = pr;
+
         }
         public void Loade()
         {
             bc = new BLL_Clase();
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = bc.Listar();
-            var a = bc.Listar();
-            foreach (var item in a)
-            {
-                comboBox1.Items.Add(item.Profesor);
-            }
 
-            comboBox1.DisplayMember = "DNI";
+            var x = new BLL_Profes();
+            var a = x.Listar();
+            
+            comboBox1.DataSource = a;
+            comboBox1.DisplayMember = "Nombre".ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -62,7 +64,9 @@ namespace Lastra_Julian_RP2
             bc.Insert(clase);
 
             //Inserto en el XML Tambien.
-            x.Write(clase.Descripcion,textBox2.Text,clase.Dia,clase.Turno);
+            //x.Write(clase.Descripcion, comboBox1.SelectedItem.ToString(), clase.Dia, clase.Turno) ;
+
+            Loade();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,6 +75,8 @@ namespace Lastra_Julian_RP2
             Assing();
             bc = new BLL_Clase();
             bc.Update(clase);
+
+            Loade();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -79,6 +85,8 @@ namespace Lastra_Julian_RP2
             Assing();
             bc = new BLL_Clase();
             bc.Delete(clase);
+
+            Loade();
         }
 
         private void button4_Click(object sender, EventArgs e)
