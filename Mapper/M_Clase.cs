@@ -25,13 +25,18 @@ namespace Mapper
                 foreach (DataRow Item in dt.Rows)
                 {
                     Clase c = new Clase();
+                    Profesor p = new Profesor();
+
                     c.Descripcion = Item["Descripcion"].ToString();
                     c.profe = Int32.Parse(Item["Profesor"].ToString());
                     c.Dia = Item["Dia"].ToString();
                     c.Turno = (Item["Turno"].ToString());
-                    //ClsEELocalidad oLoc = new ClsEELocalidad();
                     c.Cantidad = Convert.ToInt32(Item["Cantidad"]);
-                   
+                    p.DNI = Int32.Parse(Item["DNI"].ToString());
+                    p.Apellido = Item["Apellido"].ToString();
+                    p.Nombre = Item["Nombre"].ToString();
+                    c.Profesor = p;
+
                     lista.Add(c);
                 }
                 return lista;

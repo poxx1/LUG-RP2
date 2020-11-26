@@ -18,6 +18,7 @@ namespace Lastra_Julian_RP2
         {
             InitializeComponent();
             Loade();
+           // x.Read();
         }
 
         private void UI_Clases_Load(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace Lastra_Julian_RP2
             clase = new Clase();
 
             clase.Descripcion = textBox1.Text;
-            clase.profe = Int32.Parse(textBox2.Text);
+            clase.Profesor.DNI = Int32.Parse(textBox2.Text);
             clase.Turno = textBox3.Text;
             clase.Dia = textBox4.Text;
             clase.Cantidad = Int32.Parse(textBox5.Text);
@@ -53,6 +54,7 @@ namespace Lastra_Julian_RP2
             bc.Insert(clase);
 
             //Inserto en el XML Tambien.
+            x.Write(clase.Descripcion,clase.Profesor.Nombre,clase.Dia,clase.Turno);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,9 +82,8 @@ namespace Lastra_Julian_RP2
 
         private void button5_Click(object sender, EventArgs e)
         {
-           // x.Write();
+            //x.Write();
             x.Create("Boxeo","Juan","Lunes","4PM");
-            x.Read();
         }
     }
 }
